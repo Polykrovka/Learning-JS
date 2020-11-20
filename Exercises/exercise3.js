@@ -1,2 +1,3 @@
-let youName = prompt('Как вас зовут?');
+"use strict";
+let youName = prompt('Как вас зовут?', '');
 alert(`Здравствуйте ${youName}`);
