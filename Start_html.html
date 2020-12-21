@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ru">
 
 <head>
+  <title>Песочница</title>
     <meta charset="UTF-8" />
 </head>
 
@@ -14,9 +15,11 @@
 а так же на практике отрабатывать знания из курса по HTML</pre></h1>
 
   <ul>
-    <li><b>Ссылки якоря, будут работать когда страничка станет больше</b></li>
-    <li><a href="#idNumberOne"> Якорь один</a></li>
-    <li><a href="#idNumberTwo"> Якорь один</a></li>
+    <div id="idNumberOne2"></div>
+    <li><b>Ссылки якоря,для навигации по страничке</b></li>
+    <li><a href="#idNumberOne"> Смешарики</a></li>
+    
+    <li><a href="#idNumberTwo"> Якорь два</a></li>
   </ul>
 
   <p title="Всплывающая подсказка" align="right">Наведите курсор мыши на эту строку текста</p>
@@ -55,15 +58,15 @@
         </tr>
     </tbody>
   </table>
-  <div id="idNumberOne"></div>
-  <p>
-    <script>
-    let strSymbols = ''
+
+
+
+  <code><pre>    let strSymbols = ''
     for (let i = 65; i <= 220; i++) {
     strSymbols += String.fromCodePoint(i);
-    }
-    </script>
-  </p>
+    }</pre>
+  </code>
+ 
   <h4><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">Коды мнемоников</a>(символов которых нету на клавиатуре, записываются через "&". Например 	&frac14;.</h4>
     
   <pre>Тег "Pre"
@@ -71,6 +74,23 @@
               <em>Оригинальные</em>
             пробелы
   </pre>
+  <p align="center">
+  <audio  controls>
+    <source src="https://d4.hotplayer.ru/download/0afa9c2a0ccdc9ac27f976d02d50c902/192555125_456239343/154203fa36ad-51b8c3db50cb-136406228720/%D0%A1%D0%B8%D0%BB%D1%8C%D0%B2%D0%B0%D0%BD%D0%B0%20-%20%D0%97%D0%90%20%D0%9E%D0%A0%D0%94%D0%A3.mp3">
+  </audio>
+  </p>
+  
+  <div id="idNumberOne"></div>
+  <p><a href="#idNumberOne2"> Вернуться к навигации</a></p>
+
+  <p>
+  <iframe  width="560" height="315"  src="https://www.youtube.com/embed/D4ih8cIxH_g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- <video src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" height="240" width="320" controls> -->
+  </p>
+ 
+  <img src="html/1.jpg" alt="Ты накосячил с кодом и картинка не загрузилась!">
+  <p>Картинка с заданными размерами</p>
+  <img src="https://w-dog.ru/wallpapers/9/19/429925869375672/lodka-priroda-pejzazh-ozero-osen-les-derevya-doma-listya-trava.jpg" alt="Ты накосячил с кодом и картинка не загрузилась!" width="1000" height="100">
  
   <div id="idNumberTwo"></div>
 </body>
