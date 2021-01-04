@@ -1,0 +1,23 @@
+div {
+    color:#4cad4e;
+    font-size: 40px;
+    background-color: #09d3ed;
+    border: 3px dashed;
+     
+    /* Отступы, есть команды на отталкивание с определённой стороны */
+    margin: 5px;
+    /* Внутренние отступы */
+    padding: 8px;
+}
+
+#someId {
+    color: blue;
+    padding-left: 100px;
+}
+#someId:hover{
+    border: 30px solid black ;
+}
+
+body {
+    background-image: url(html/phone.jpg);
+}
