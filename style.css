@@ -8,14 +8,39 @@
     margin: 5px;
     /* Внутренние отступы */
     padding: 8px;
+    text-align: center;
 }
 .div:hover{
     border: 30px solid #050585;
 }
 
+.animation {
+    font-size: 40px;
+    background-color: #09d3ed;  
+    opacity: 0.6;
+    border:solid 3px;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    margin-left: 400px;
+    box-shadow: -13px 13px 5px black;
+    transform: scale(0.9);
+}
+.animation:hover{
+    transform: rotate(360deg);
+}
+#animation:hover{
+    transform: rotate(180deg);
+    background-color: #1e1ae0;  
+    transition: 2.0s all;
+}
+
 #someId {
     color: blue;
-    padding-left: 100px;
+    padding-left: 50px;
+    width: 15%;
+    transform: rotate(30deg) scale(1.0);
 }
 #someId:hover{
     border: 30px solid black ;
@@ -37,9 +62,21 @@ a {
     margin-left: 800px;
     padding: 20px;
     border-radius: 30px;
+    opacity: 0.7;
 }
 
 #colors:hover{
     border: 30px solid gray;
     font-size: 45px;
+    opacity: 1;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+.opacity:hover{
+    opacity: 1;
+}
+.shadow {
+    box-shadow: -13px 13px 5px black;
 }
