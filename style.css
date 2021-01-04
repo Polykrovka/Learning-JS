@@ -1,4 +1,4 @@
-div {
+.div {
     color:#4cad4e;
     font-size: 40px;
     background-color: #09d3ed;
@@ -8,6 +8,9 @@ div {
     margin: 5px;
     /* Внутренние отступы */
     padding: 8px;
+}
+.div:hover{
+    border: 30px solid #050585;
 }
 
 #someId {
@@ -20,4 +23,23 @@ div {
 
 body {
     background-image: url(html/phone.jpg);
+}
+
+a {
+    font-size: 25px;
+    color: #082401;
+}
+
+#colors {
+    font-size: 25px;
+    color: #49eb34;
+    background-color: aliceblue;
+    margin-left: 800px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#colors:hover{
+    border: 30px solid gray;
+    font-size: 45px;
 }
