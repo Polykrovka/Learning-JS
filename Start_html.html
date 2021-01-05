@@ -30,11 +30,11 @@
 
   <main> <!-- Определение основной части страницы, какой то уникальный контен  у меня в теге всё, думаю не правильно -->
       <header> <!-- Заголовочная информация статьи, шапка-->
-        <h1 align="center"><pre>Эта страничка создана чтобы запускать решения моих упражнений из книги по JS 
+        <h1 class="center"><pre>Эта страничка создана чтобы запускать решения моих упражнений из книги по JS 
   а так же на практике отрабатывать знания из курса по HTML</pre></h1>
 
         <img src="html/logo.jpg" alt="Логотип" height="232"> <!-- Логотип сайта -->
-        <nav align="center"> <!-- Меню -->
+        <nav class="center"> <!-- Меню -->
           <a href="#idNumberOne" class="menu"> Смешарики!  </a>
           <a href="#idNumberTwo" class="menu"> За орду!  </a>
           <a href="#idNumberThree"> <img src="html/CSS.jpg" width="120" 
@@ -44,7 +44,7 @@
     <br>
     <a href="https://validator.w3.org/#validate_by_upload">Сайт проверки HTML разметки, пользуйся им почаще. Пока там много ошибок из за того что я не умею пользоваться CSS, позже займусь исправлением.</a>
 
-    <p title="Всплывающая подсказка" align="right">Наведите курсор мыши на эту строку текста</p>
+    <p title="Всплывающая подсказка" class="right">Наведите курсор мыши на эту строку текста</p>
 
     <ul>
       <li>This a list
@@ -56,21 +56,21 @@
       <li><em>Эта строка курсивом</em></li>
     </ul>
 
-    <h4>Это таблица, tr строки, td ячейки, th жирные ячейки заголовки, thead позволит в будущем задать оформление для строки с заголовками с помощью стилей. </h4>
+    <h3 class="center">Это таблица, tr строки, td ячейки, th жирные ячейки заголовки, thead позволит в будущем задать оформление для строки с заголовками с помощью стилей. </h4>
     <table  style="border: solid 1px; background-color: aqua;"> 
       <thead > <!-- Блок с заголовками -->
           <tr > <!-- Строка -->
               <th >Первая ячейка</th>
               <th>Вторая ячейка</th>
-              <th align="center">Третья ячейка</th>
+              <th class="center">Третья ячейка</th>
           </tr>
       </thead>
 
       <tbody > <!-- Тело таблицы -->
           <tr> <!-- Вторая строка -->
               <td>Первая ячейка</td>
-              <td align="center">Вторая <b>ячейка</b></td>
-              <td align="center">Третья ячейка</td>
+              <td class="center">Вторая <b>ячейка</b></td>
+              <td class="center">Третья ячейка</td>
           </tr>
               <td colspan="2">Обьединённая ячейка(colspan="2") </td>
               <td rowspan="2">Объединённый столбец (rowspan="2")</td>
@@ -115,7 +115,7 @@
     <div id="idNumberTwo"></div>
     <p><a href="#idComeBack"> Вернуться к навигации</a></p>
 
-    <p align="center">
+    <p class="center">
     <audio  controls>
       <source src="https://d4.hotplayer.ru/download/0afa9c2a0ccdc9ac27f976d02d50c902/192555125_456239343/154203fa36ad-51b8c3db50cb-136406228720/%D0%A1%D0%B8%D0%BB%D1%8C%D0%B2%D0%B0%D0%BD%D0%B0%20-%20%D0%97%D0%90%20%D0%9E%D0%A0%D0%94%D0%A3.mp3">
     </audio>
@@ -140,8 +140,12 @@
       }
     </style>
 
-    <div class="div">Создал отдельный файл для CSS теперь буду издеваться над этой строчкой через него</div>
-    <div class="div"> Эксперементирую </div> <br>
+    <div class="div">Создал отдельный файл для CSS теперь буду издеваться над этой <span style="font-weight: 900; font-size: 50px;">строчкой</span> через него</div>
+    <div class="div"> Эксперементирую </div> 
+    <div class="div" style="padding: 25px 50px 0px 40px;"> Правилом padding: 25px 50px 0px 40px; можно задать внутренние отступы таким образом</br>
+      Если указать два значения, то первое будет использоваться для отступов по вертикали (сверху и снизу), а второе по горизонтали (справа и слева).</br>
+      Если указать только одно значение, то оно будет использовано одновременно для всех сторон.</div>
+    <br>
     <div id=someId class="div">Тот же тег но с id </div>
     <br>
     <a id="colors"  class="shadow"  href="https://www.google.com/search?client=opera&q=сщдщкзшлук&sourceid=opera&ie=UTF-8&oe=UTF-8">Найти код нужного цвета</a>
@@ -151,9 +155,14 @@
     <br>
     <div  class="animation" id='animation' >Анимация</div>
     <br>
-
-
-
+    <p style="font-variant: small-caps;">Текст в стиле капитель. Часто используется для абревиатур. ДТТ. font-variant: small-caps;</p>
+    <p>
+      <span style="text-decoration: underline;">Подчёркивание текста</span>
+      <span style="text-decoration: line-through;">Перечёркивание текста</span>
+      <span style="text-decoration: overline;">Надчёркивание текста</span>
+    </p>
+    <br>
+    
 
 
 
@@ -174,7 +183,7 @@
     <iframe  width="560" height="315"  src="https://www.youtube.com/embed/D4ih8cIxH_g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- <video src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" height="240" width="320" controls> -->
 
-    <form align="right">
+    <form class="right">
       <textarea class="opacity" rows="8" cols="130">Оставьте ваш комментарий</textarea>
       <button>Отправить</button>
     </form>
