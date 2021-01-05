@@ -91,3 +91,29 @@ a {
 .right{
     text-align: right;
 }
+
+
+@keyframes color-change {
+	0%{
+    color: blue;
+    }
+
+    25%{
+    color:#1ceeee
+    }
+    
+	50%{
+    color: red;
+    }
+    
+    75%{
+    color: rgb(248, 252, 8) 
+    }
+
+    100%{
+	color: green;
+	}
+}
+.animation-text {
+animation: color-change 2.5s infinite;
+}
