@@ -30,24 +30,33 @@
 // -------------------------------------------------------------
 
 function getMaxSubSum(array){
-  let underSum = 0;
-  for(let i of array){
-    if(i < 0){continue}
-    if(i > underSum){
-      underSum += i;
+  let maxSum = 0;
+
+  for(let i = 0; i < array.length; i++) {
+    let underSum = 0;
+    for(let j = i; j < array.length; j++) {
+      underSum += array[j];
+      maxSum = Math.max(maxSum, underSum);
     }
   }
+  return maxSum;
+};
+// alert( getMaxSubSum([-1, 2, 3, -9]) ); // 5
+// alert( getMaxSubSum([-1, 2, 3, -9, 11]) ); // 11
+// alert( getMaxSubSum([-2, -1, 1, 2]) ); // 3
+// alert( getMaxSubSum([1, 2, 3]) ); // 6
+// alert( getMaxSubSum([100, -9, 2, -3, 5]) ); // 100
 
+// Быстрый вариант из книжки, просто и гениально но я не додумался.
 
+function getMaxSubSum(arr) {
+  let maxSum = 0;
+  let partialSum = 0;
 
-}
+  for (let item of arr) { // для каждого элемента массива
+    partialSum += item; // добавляем значение элемента к partialSum
+    maxSum = Math.max(maxSum, partialSum); // запоминаем максимум на данный момент
+    if (partialSum < 0) partialSum = 0; // ноль если отрицательное
+  }
 
-
-getMaxSubSum([-1, 2, 3, -9]) //= 5 
-getMaxSubSum([2, -1, 2, 3, -9])// = 6
-getMaxSubSum([-1, 2, 3, -9, 11])// = 11
-getMaxSubSum([-2, -1, 1, 2]) //= 3
-getMaxSubSum([100, -9, 2, -3, 5]) //= 100
-getMaxSubSum([1, 2, 3]) //= 6 (берём все)
-
-getMaxSubSum([-1, -2, -3]) //= 0
+  return maxSum;
